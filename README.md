@@ -14,14 +14,11 @@
 
 ### Project Description
 1. A tic-tac-toe bot that you cannot beat. It has a Cyberpunk Theme
-2. A Sarcastic, Passive Agressive Chat Bot
 ### The Problem (that doesn't exist)
 1.The Fact that we can defeat people in tic-tac-toe
-2.Kindness
 
 ### The Solution (that nobody asked for)
 1.By never being able to defeat it
-2.By making a bot that is passive aggressive
 ## Technical Details
 ### Technologies/Components Used
 For Software:
