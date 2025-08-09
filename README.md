@@ -28,7 +28,7 @@ For Hardware:
 -None
 
 ### Implementation
-For Software:
+For Software:The Minmax algorithm was used to make the bot unbeatable. The Best case Scenario for the player is a draw
 # Installation
 [commands]
 
