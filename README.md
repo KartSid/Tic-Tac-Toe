@@ -40,7 +40,7 @@ For Software:The Minmax algorithm was used to make the bot unbeatable. The Best 
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
 <img width="1792" height="853" alt="Screenshot 2025-08-09 141323" src="https://github.com/user-attachments/assets/110344e8-93f8-492e-95d6-25b825ea9f79" /> 
 The Intro Screen Where you choose who can start. The Player(You) or the Bot <br>
 <br><br><img width="1771" height="831" alt="Screenshot 2025-08-09 141338" src="https://github.com/user-attachments/assets/ef1e2e70-9cd1-40cb-8e89-d40c6474d911" /> The Layout of the Grid
