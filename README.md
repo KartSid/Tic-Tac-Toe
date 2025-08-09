@@ -72,7 +72,7 @@ For Hardware:
 
 ### Project Demo
 # Video
-[https://github.com/user-attachments/assets/cba6cdc6-7af2-4bb9-a07d-3588ad20efe2]
+https://github.com/user-attachments/assets/cba6cdc6-7af2-4bb9-a07d-3588ad20efe2
 A short Demo of the Website
 
 # Additional Demos
