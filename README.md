@@ -15,10 +15,9 @@
 ### Project Description
 1. A tic-tac-toe bot that you cannot beat. It has a Cyberpunk Theme
 ### The Problem (that doesn't exist)
-1.The Fact that we can defeat people in tic-tac-toe
-
+1.People can be defeated
 ### The Solution (that nobody asked for)
-1.By never being able to defeat it
+1.The Bot can never be defeated
 ## Technical Details
 ### Technologies/Components Used
 For Software:
