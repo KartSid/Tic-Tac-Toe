@@ -47,44 +47,15 @@ The Intro Screen Where you choose who can start. The Player(You) or the Bot <br>
 <br><br><img width="1858" height="870" alt="Screenshot 2025-08-09 141410" src="https://github.com/user-attachments/assets/c52e7342-473e-4ee4-b34d-16143e60a2f2" />The Screen When the Bot Wins
 <br><br><img width="1864" height="845" alt="Screenshot 2025-08-09 141357" src="https://github.com/user-attachments/assets/f3ffc538-0c13-44c8-9db1-d65b4cfe26cf" />The Screen When it is a Draw
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-
 # Video
 
 https://github.com/user-attachments/assets/932289e1-0733-4abf-9e71-a56f67d56937
 A short Demo of the Website
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- Kartik Anil: [Specific contributions]
-- Sidharth Dileep: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
+- Kartik Anil
+- Sidharth Dileep
 ---
 Made with ❤️ at TinkerHub Useless Projects 
 
