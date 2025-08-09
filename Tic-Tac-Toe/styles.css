@@ -1,0 +1,291 @@
+body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.02) 0,
+    rgba(255,255,255,0.02) 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+.overlay {
+  position: absolute;
+  background: rgba(0,0,0,0.85);
+  border: 2px solid cyan;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 0 15px cyan;
+  text-align: center;
+  z-index: 10;
+}
+.overlay h2 {
+  margin: 0 0 15px 0;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: cyan;
+  text-shadow: 0 0 8px cyan;
+}
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #0ff;
+  user-select: none;
+}
+select, button {
+  background: black;
+  border: 1px solid cyan;
+  color: cyan;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+select:hover, button:hover {
+  background: cyan;
+  color: black;
+  cursor: pointer;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  z-index: 5;
+}
+.cell {
+  background: #111;
+  border: 2px solid #0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  color: cyan;
+  text-shadow: 0 0 5px cyan, 0 0 10px cyan;
+  user-select: none;
+  transition: background 0.3s, color 0.3s;
+}
+.cell.taken {
+  cursor: not-allowed;
+}
+.cell.X {
+  color: #ff2aad;
+  text-shadow: 0 0 10px #ff2aad, 0 0 20px #ff2aad;
+}
+.cell.O {
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+}
+.win {
+  animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+  0% {
+    text-shadow:
+      0 0 15px magenta,
+      0 0 30px magenta,
+      0 0 40px cyan,
+      0 0 80px cyan;
+    color: magenta;
+  }
+  100% {
+    text-shadow:
+      0 0 30px cyan,
+      0 0 60px cyan,
+      0 0 70px magenta,
+      0 0 140px magenta;
+    color: cyan;
+  }
+}
+#restartBtn {
+  margin-top: 15px;
+  background: black;
+  border: 1.5px solid cyan;
+  color: cyan;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  user-select: none;
+}
+#restartBtn:hover {
+  background: cyan;
+  color: black;
+  cursor: pointer;
+}
+/* RESULT OVERLAY */
+#resultOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(10, 10, 10, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  user-select: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+#resultOverlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
+#resultOverlay h1 {
+  color: #ff2aad;
+  font-size: 3rem;
+  text-shadow:
+    0 0 10px #ff2aad,
+    0 0 20px #ff2aad,
+    0 0 40px #00fff7,
+    0 0 80px #00fff7;
+  animation: pulse 1s infinite alternate;
+  margin-bottom: 20px;
+  position: relative;
+}
+#resultOverlay h1.glitch {
+  color: #00fff7;
+  animation: glitch 1.5s infinite;
+}
+#resultOverlay h1.glitch::before,
+#resultOverlay h1.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  opacity: 0.8;
+  clip: rect(0, 900px, 0, 0);
+}
+#resultOverlay h1.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 red;
+  animation: glitchTop 1.5s infinite;
+}
+#resultOverlay h1.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 blue;
+  animation: glitchBottom 1.5s infinite;
+}
+#resultOverlay .message {
+  color: cyan;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px cyan;
+  animation: flicker 2s infinite alternate;
+}
+#resultOverlay button {
+  background: black;
+  border: 2px solid cyan;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  color: cyan;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+#resultOverlay button:hover {
+  background: cyan;
+  color: black;
+}
+/* SCANLINE OVERLAY */
+#scanlineOverlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 255, 0.05) 0,
+    rgba(0, 255, 255, 0.05) 1px,
+    transparent 2px
+  );
+  animation: scanlineMove 3s linear infinite;
+  z-index: 19;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#scanlineOverlay.visible {
+  opacity: 1;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+@keyframes glitch {
+  0% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translate(0);
+  }
+  20% {
+    clip: rect(0, 9999px, 15px, 0);
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    clip: rect(0, 9999px, 5px, 0);
+    transform: translate(2px, 2px);
+  }
+  60% {
+    clip: rect(0, 9999px, 12px, 0);
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    clip: rect(0, 9999px, 7px, 0);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translate(0);
+  }
+}
+@keyframes glitchTop {
+  0% {
+    clip: rect(0, 9999px, 10px, 0);
+    transform: translate(2px, -2px);
+  }
+  50% {
+    clip: rect(0, 9999px, 15px, 0);
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    clip: rect(0, 9999px, 10px, 0);
+    transform: translate(2px, -2px);
+  }
+}
+@keyframes glitchBottom {
+  0% {
+    clip: rect(5px, 9999px, 20px, 0);
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    clip: rect(0, 9999px, 12px, 0);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    clip: rect(5px, 9999px, 20px, 0);
+    transform: translate(-2px, 2px);
+  }
+}
+@keyframes scanlineMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}

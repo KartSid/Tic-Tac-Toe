@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="overlay" id="startScreen">
+    <h2>Just try to Win Tic-Tac-Toe</h2>
+    <label>Who starts?
+      <select id="startChoice">
+        <option value="player">Player</option>
+        <option value="bot">Bot</option>
+      </select>
+    </label>
+    <label>Your symbol:
+      <select id="symbolChoice">
+        <option value="X">X</option>
+        <option value="O">O</option>
+      </select>
+    </label>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div id="gameArea" style="display:none; text-align:center;">
+    <div id="board"></div>
+    <button id="restartBtn" style="display:none;">Restart</button>
+  </div>
+
+  <div id="resultOverlay" aria-live="polite" role="alert">
+    <h1 id="resultTitle" data-text="">You Win!</h1>
+    <div class="message" id="resultMessage">Congrats!</div>
+    <button id="resultRestartBtn">Restart</button>
+  </div>
+
+  <div id="scanlineOverlay"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
