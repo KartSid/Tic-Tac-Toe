@@ -22,15 +22,11 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML
+- ChatGPT
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+-None
 
 ### Implementation
 For Software:
