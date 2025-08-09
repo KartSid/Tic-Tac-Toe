@@ -35,7 +35,7 @@ For Software:The Minmax algorithm was used to make the bot unbeatable. The Best 
 None-It's a Website
 
 # Run
-
+Just Open the Website
 
 ### Project Documentation
 For Software:
