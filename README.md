@@ -71,8 +71,10 @@ For Hardware:
 *Explain the final build*
 
 ### Project Demo
+
 # Video
-https://github.com/user-attachments/assets/cba6cdc6-7af2-4bb9-a07d-3588ad20efe2
+
+https://github.com/user-attachments/assets/932289e1-0733-4abf-9e71-a56f67d56937
 A short Demo of the Website
 
 # Additional Demos
