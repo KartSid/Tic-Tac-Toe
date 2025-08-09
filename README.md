@@ -81,8 +81,8 @@ A short Demo of the Website
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
+- Kartik Anil: [Specific contributions]
+- Sidharth Dileep: [Specific contributions]
 - [Name 3]: [Specific contributions]
 
 ---
