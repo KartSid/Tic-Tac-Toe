@@ -13,11 +13,11 @@
 - Member 2: Sidharth Dileep - College of Engineering,Kallooppara
 
 ### Project Description
-1. A tic-tac-toe bot that you cannot beat. It has a Cyberpunk Theme
+  A tic-tac-toe bot that you cannot beat. It has a Cyberpunk Theme
 ### The Problem (that doesn't exist)
-1.People can be defeated
+ People can be defeated
 ### The Solution (that nobody asked for)
-1.The Bot can never be defeated
+ The Bot can never be defeated
 ## Technical Details
 ### Technologies/Components Used
 For Software:
