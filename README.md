@@ -22,6 +22,8 @@
 ### Technologies/Components Used
 For Software:
 - HTML
+- CSS
+- Javascript
 - ChatGPT
 
 For Hardware:
