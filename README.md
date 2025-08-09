@@ -45,7 +45,7 @@ For Software:
 The Intro Screen Where you choose who can start. The Player(You) or the Bot <br>
 <br><br><img width="1771" height="831" alt="Screenshot 2025-08-09 141338" src="https://github.com/user-attachments/assets/ef1e2e70-9cd1-40cb-8e89-d40c6474d911" /> The Layout of the Grid
 <br><br><img width="1858" height="870" alt="Screenshot 2025-08-09 141410" src="https://github.com/user-attachments/assets/c52e7342-473e-4ee4-b34d-16143e60a2f2" />The Screen When the Bot Wins
-<br><br><img width="1864" height="845" alt="Screenshot 2025-08-09 141357" src="https://github.com/user-attachments/assets/f3ffc538-0c13-44c8-9db1-d65b4cfe26cf" />The Screen When It Draws
+<br><br><img width="1864" height="845" alt="Screenshot 2025-08-09 141357" src="https://github.com/user-attachments/assets/f3ffc538-0c13-44c8-9db1-d65b4cfe26cf" />The Screen When it is a Draw
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
